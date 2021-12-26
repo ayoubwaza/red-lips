@@ -38,19 +38,14 @@ function Story({ styles }) {
         trigger: Firstyear.current,
         start: "top 100%",
         scrub: 1,
-        markers:{
-            startColor:"yellow",
-            endColor:"yellow",
-            fontSize:"40px"
-        }
       },
     });
-    tl.to(storyFirstImage.current, { y: 23 })
-    tl.to(storyFirstImage.current.children[0], { scale:1.5 })
-    tl.to(storySecondImage.current, { y: 23 })
-    tl.to(storySecondImage.current.children[0], { scale:1.5 })
-    tl.to(storyLastImage.current, { y: 23 })
-    tl.to(storyLastImage.current.children[0], { scale:1.5 })
+    tl.to(storyFirstImage.current, { y: 23 });
+    tl.to(storyFirstImage.current.children[0], { scale: 1.5 });
+    tl.to(storySecondImage.current, { y: 23 });
+    tl.to(storySecondImage.current.children[0], { scale: 1.5 });
+    tl.to(storyLastImage.current, { y: 23 });
+    tl.to(storyLastImage.current.children[0], { scale: 1.5 });
   }, []);
   return (
     <section ref={story} className={`wrappingIT ${styles._story}`}>
