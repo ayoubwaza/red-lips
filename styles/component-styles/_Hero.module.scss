@@ -1,0 +1,76 @@
+._hero {
+  display: $f;
+  justify-content: $c;
+  align-items: $c;
+  flex-direction: $cl;
+  height: $per;
+  width: $per;
+  background: #000;
+  color: #fff;
+  h1 {
+    font-size: $size;
+    letter-spacing: 30px;
+    margin: 0 0 0.2em 0;
+    padding: 0;
+    font-family: "Maragsa";
+    text-align: $c;
+  }
+  ._hero_Child {
+    width: $per;
+    position: $re;
+    display: $f;
+    justify-content: $c;
+    align-items: $c;
+    font-family: $font;
+    font-weight: $b;
+    .left_title {
+      position: absolute;
+      font-size: 8em;
+      left: 0;
+      z-index: 1;
+    }
+    .right_title {
+      position: absolute;
+      font-size: 8em;
+      right: 0;
+      top: 2em;
+      z-index: 1;
+    }
+    ._hero_container_Img {
+      overflow: hidden;
+      img {
+        object-fit: $cv;
+      }
+    }
+    .in_Doubt {
+      position: absolute;
+      user-select: none;
+      pointer-events: none;
+      right: 50%;
+      top: 5%;
+      mix-blend-mode: difference;
+      color: red;
+      animation: RotatedText 7.5s linear infinite;
+      @keyframes RotatedText {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      span {
+        display: inline-block;
+        position: absolute;
+        text-transform: uppercase;
+        transform-origin: 0 100px;
+        margin: 0;
+        padding: 0;
+        top: -100px;
+        font-weight: $b;
+        font-family: "Maragsa";
+        font-size: 1.3em;
+      }
+    }
+  }
+}

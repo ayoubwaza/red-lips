@@ -1,0 +1,115 @@
+._story {
+  .firstYear,
+  .secondYear,
+  .today {
+    width: $per;
+    height: $vh;
+  }
+  .firstYear {
+    background: rgba(17, 16, 16, 1);
+    &::before {
+      content: "2020";
+      position: absolute;
+      font-size: calc($size * 1.2);
+      letter-spacing: 30px;
+      margin: 0 0 0.2em 0;
+      padding: 0;
+      font-family: "Maragsa";
+      text-align: $c;
+      color: #fff;
+      transform: rotate(90deg);
+      top: 50%;
+      left: -6%;
+      margin: 0;
+    }
+    display: $f;
+    justify-content: $c;
+    align-items: $c;
+    position: $re;
+    .redLikeblood {
+      font-size: $size;
+      position: absolute;
+      mix-blend-mode: difference;
+      color: #fff;
+      z-index: 9;
+    }
+    .firstYear_Images {
+      div {
+        overflow: hidden;
+      }
+      display: $f;
+      justify-content: $c;
+      align-items: $c;
+      position: absolute;
+      img {
+        width: 300px;
+        height: 400px;
+        max-width: 300px;
+        min-width: 300px;
+        max-height: 400px;
+        min-height: 400px;
+        object-fit: $cv;
+      }
+    }
+    &::after {
+      content: "ـRedــــــــــــــــــــــLipsـ";
+      position: absolute;
+      font-size: 2em;
+      padding: 0;
+      font-family: "Maragsa";
+      text-align: $c;
+      color: #fff;
+      transform: rotate(90deg);
+      top: 28%;
+      right: 0% !important;
+      margin: 0;
+    }
+    .firstYear_text {
+      position: absolute;
+      bottom: 0;
+      p {
+        font-weight: $b;
+        color: #fff;
+        font-size: 1.9em;
+      }
+    }
+  }
+  .secondYear {
+    background: red;
+    &::before {
+      content: "2021";
+      position: absolute;
+      font-size: calc($size * 1.2);
+      letter-spacing: 30px;
+      margin: 0 0 0.2em 0;
+      padding: 0;
+      font-family: "Maragsa";
+      text-align: $c;
+      color: #fff;
+      transform: rotate(90deg);
+      top: 40%;
+      left: 0%;
+      margin: 0;
+      display: flex;
+    }
+  }
+  .today {
+    background: rgba(17, 16, 16, 1);
+    &::before {
+      content: "2022";
+      position: absolute;
+      font-size: calc($size * 1.2);
+      letter-spacing: 30px;
+      margin: 0 0 0.2em 0;
+      padding: 0;
+      font-family: "Maragsa";
+      text-align: $c;
+      color: #fff;
+      transform: rotate(90deg);
+      top: 40%;
+      left: 0%;
+      margin: 0;
+      display: flex;
+    }
+  }
+}
