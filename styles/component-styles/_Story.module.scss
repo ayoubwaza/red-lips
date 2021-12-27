@@ -75,7 +75,13 @@
     }
   }
   .secondYear {
-    background: red;
+    display: $f;
+    justify-content: $c;
+    align-items: $c;
+    position: $re;
+    flex-direction: column;
+    background: $red;
+    color: #fff;
     &::before {
       content: "2021";
       position: absolute;
@@ -85,16 +91,65 @@
       padding: 0;
       font-family: "Maragsa";
       text-align: $c;
-      color: #fff;
       transform: rotate(90deg);
       top: 40%;
       left: 0%;
       margin: 0;
       display: flex;
+      mix-blend-mode: difference;
+    }
+    .secondYearFirstImage {
+      position: absolute;
+      left: 5%;
+      z-index: -1;
+      overflow: hidden;
+      img {
+        width: 440px;
+        object-fit: $cv;
+      }
+    }
+    .secondYear_text_Content {
+      position: $re;
+      left: 10%;
+      span {
+        font-family: "Maragsa";
+        font-size: calc($size * 0.5);
+      }
+      .secondYear_Quote {
+        font-family: $font;
+        font-size: calc($size * 0.4);
+        font-weight: $b;
+        padding: 0px 7px 0 7px;
+      }
+    }
+    .secondYearLastImage {
+      position: absolute;
+      right: 5%;
+      z-index: -1;
+      overflow: hidden;
+      top: 15%;
+      img {
+        width: 440px;
+        max-width: 400px;
+        height: 500px;
+        object-fit: $cv;
+      }
     }
   }
   .today {
+    display: $f;
+    justify-content: $c;
+    align-items: $c;
+    position: $re;
     background: rgba(17, 16, 16, 1);
+    .today_Child {
+      overflow: hidden;
+      width: 960px !important;
+      height: 540px !important;
+      object-fit: $cv;
+      position: $re;
+      z-index: -1;
+    }
     &::before {
       content: "2022";
       position: absolute;
@@ -110,6 +165,24 @@
       left: 0%;
       margin: 0;
       display: flex;
+      mix-blend-mode: difference;
+    }
+    .today_textContent {
+      position: absolute;
+      mix-blend-mode: difference;
+      color: rgb(255, 255, 255);
+      i {
+        font-family: "Maragsa";
+        font-size: 1em;
+        right: 0%;
+        position: absolute;
+      }
+      .today_Quote {
+        font-family: $font;
+        font-size: calc($size * 0.28);
+        font-weight: $b;
+        padding: 0px 7px 0 7px;
+      }
     }
   }
 }

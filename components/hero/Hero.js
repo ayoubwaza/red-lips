@@ -68,6 +68,13 @@ function Hero({ styles }) {
   }, []);
   return (
     <section className="hero">
+      <style jsx global>
+        {`
+          body {
+            overflow: hidden;
+          }
+        `}
+      </style>
       <div className={styles._hero}>
         <h1 ref={Main_Title}>Red Lips</h1>
         <div className={styles._hero_Child}>
