@@ -39,18 +39,25 @@ a {
   background: #555;
 }
 //styling our storySection
-.wrappingIT{
+.wrappingIT {
   width: 300%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.panel{
+.panel {
   width: 100%;
 }
 canvas {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover;
+}
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

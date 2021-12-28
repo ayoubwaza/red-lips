@@ -76,6 +76,16 @@ function Hero({ styles }) {
         `}
       </style>
       <div className={styles._hero}>
+        {/* <div className={styles.menu_Bars}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div> */}
+        <div className={styles.menuCircle}>
+          <span>
+            Menu
+          </span>
+        </div>
         <h1 ref={Main_Title}>Red Lips</h1>
         <div className={styles._hero_Child}>
           <div ref={leftTitle} className={styles.left_title}>

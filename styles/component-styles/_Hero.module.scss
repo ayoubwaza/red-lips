@@ -8,6 +8,60 @@
   background: #000;
   color: #fff;
   padding: $padd;
+  position: $re;
+  /*   .menu_Bars {
+    position: absolute;
+    z-index: 9;
+    right: 2%;
+    top: 5%;
+    cursor: pointer;
+    div {
+      margin-bottom: 2px;
+    }
+    div:nth-child(1) {
+      width: 70px;
+      background: #fff;
+      height: 5px;
+      border-radius: 50px;
+      mix-blend-mode: difference;
+    }
+    div:nth-child(2) {
+      width: 50px;
+      background: #fff;
+      height: 5px;
+      border-radius: 50px;
+      mix-blend-mode: difference;
+    }
+    div:nth-child(3) {
+      width: 70px;
+      background: #fff;
+      height: 5px;
+      border-radius: 50px;
+      mix-blend-mode: difference;
+    }
+  } */
+  .menuCircle {
+    width: 80px;
+    height: 80px;
+    border-radius: 200%;
+    position: absolute;
+    background: #fff;
+    top: 50%;
+    z-index: 9999;
+    display: $f;
+    justify-content: $c;
+    align-items: $c;
+    font-family: $font;
+    font-size: 1.5em;
+    font-weight: $b;
+    text-align: $c;
+    top: 50%;
+    right: 0%;
+    mix-blend-mode: difference;
+    span {
+      color: red;
+    }
+  }
   h1 {
     font-size: $size;
     letter-spacing: 30px;
